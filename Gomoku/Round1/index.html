@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomoku Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gomoku Game</h1>
+        <nav>
+            <button id="new-game">New Game</button>
+            <button id="restart-game">Restart Game</button>
+            <button id="instructions-toggle">Instructions</button>
+        </nav>
+    </header>
+    <main>
+        <div id="game-board"></div>
+        <div id="status-display">Player 1's Turn</div>
+        <div id="instructions" class="hidden">
+            <p>Gomoku is a strategy board game. Players take turns placing stones on a 20x20 grid. The first player to align five stones in a row, column, or diagonal wins. If the board is filled without any player winning, the game ends in a draw.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us at <a href="mailto:support@gomokugame.com">support@gomokugame.com</a></p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

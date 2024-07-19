@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Training Environment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Virtual Training</div>
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sport-selection">
+            <label for="sport-dropdown">Select Sport:</label>
+            <select id="sport-dropdown">
+                <option value="soccer">Soccer</option>
+                <option value="basketball">Basketball</option>
+                <option value="baseball">Baseball</option>
+            </select>
+            <div class="sport-icons">
+                <img src="soccer-icon.png" alt="Soccer">
+                <img src="basketball-icon.png" alt="Basketball">
+                <img src="baseball-icon.png" alt="Baseball">
+            </div>
+        </section>
+        <section class="shot-settings">
+            <label for="distance-input">Distance:</label>
+            <input type="range" id="distance-input" min="1" max="100" value="10">
+            <label for="target-size-input">Target Size:</label>
+            <select id="target-size-input">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </section>
+        <section class="training-session">
+            <button id="start-button">Start Training</button>
+            <div id="virtual-interface">
+                <button id="shoot-button" onmousedown="chargeShot()" onmouseup="releaseShot()">Shoot</button>
+            </div>
+        </section>
+        <section class="feedback-analysis">
+            <div id="real-time-feedback">Real-Time Feedback: N/A</div>
+            <div id="performance-metrics">Performance Metrics: N/A</div>
+        </section>
+        <section class="reports">
+            <button id="generate-report-button">Generate Report</button>
+            <div id="progress-graphs">Progress Graphs: N/A</div>
+        </section>
+    </main>
+    <footer>
+        <div>Contact Information: email@example.com | 123-456-7890 | Social Media Links</div>
+        <div><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

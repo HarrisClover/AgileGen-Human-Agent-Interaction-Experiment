@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Training Environment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Training Sessions</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sport-selection">
+            <h2>Sport Selection</h2>
+            <label for="sport">Select Sport:</label>
+            <select id="sport">
+                <option value="basketball">Basketball</option>
+                <option value="soccer">Soccer</option>
+                <option value="archery">Archery</option>
+            </select>
+            <label for="distance">Distance (meters):</label>
+            <input type="number" id="distance" min="1">
+            <label for="target-size">Target Size (meters):</label>
+            <input type="number" id="target-size" min="0.1" step="0.1">
+            <button id="start-session">Start Training Session</button>
+        </section>
+        <section id="virtual-training-interface">
+            <h2>Virtual Training Interface</h2>
+            <div id="display-area">
+                <p id="selected-sport"></p>
+                <p id="shot-settings"></p>
+            </div>
+            <div id="feedback-panel">
+                <h3>Real-Time Feedback</h3>
+                <p id="feedback"></p>
+            </div>
+        </section>
+        <section id="shot-tracking-analysis">
+            <h2>Shot Tracking and Analysis</h2>
+            <table id="shot-history">
+                <thead>
+                    <tr>
+                        <th>Shot Number</th>
+                        <th>Accuracy</th>
+                        <th>Technique Feedback</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div id="graphical-analysis">
+                <h3>Graphical Analysis</h3>
+                <canvas id="accuracy-trend"></canvas>
+                <canvas id="shot-heatmap"></canvas>
+            </div>
+        </section>
+        <section id="progress-reports">
+            <h2>Progress Reports</h2>
+            <button id="generate-report">Generate Progress Report</button>
+            <div id="report-display">
+                <h3>Report Summary</h3>
+                <p id="report-summary"></p>
+                <button id="download-report">Download PDF Report</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

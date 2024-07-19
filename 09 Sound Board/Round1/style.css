@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation-bar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.instruction-section {
+    margin-bottom: 20px;
+}
+
+.word-cards-section {
+    display: flex;
+    gap: 20px;
+}
+
+.word-card {
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.word-card .front, .word-card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.6s;
+}
+
+.word-card .back {
+    transform: rotateY(180deg);
+}
+
+.word-card.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.word-card.flipped .back {
+    transform: rotateY(0deg);
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.social-media-links a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+}

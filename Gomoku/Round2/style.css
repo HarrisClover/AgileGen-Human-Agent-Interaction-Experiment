@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameStatus {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 1px;
+    background-image: url('wood-texture.jpg'); /* Assuming a wood texture image is available */
+}
+
+#gameBoard div {
+    width: 30px;
+    height: 30px;
+    background-color: transparent; /* Make the background transparent so the wooden texture shows */
+    border: 1px solid #663300; /* Dark brown border to simulate gaps in the wooden board */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%; /* Makes the divs circular */
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Adds a subtle shadow for a 3D effect */
+}
+
+#gameBoard div.black {
+    background-color: #000; /* Darker shade for black stone */
+}
+
+#gameBoard div.white {
+    background-color: #FFF; /* Lighter shade for white stone */
+}
+
+#controls {
+    margin-top: 15px;
+}
+
+#controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#playerInfo {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    color: #007BFF;
+}

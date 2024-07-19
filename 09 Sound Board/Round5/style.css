@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F0FFF0; /* Light mint green background for the body */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold background for the header */
+    border-bottom: 2px solid #FF8C00; /* Dark orange border */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B4513; /* Saddle Brown text for better readability */
+}
+
+.navigation-menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #191970; /* Midnight Blue color for links */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #FF4500; /* Orange Red for heading */
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2E8B57; /* Sea Green text for readability */
+}
+
+.card-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    background-color: #E6E6FA; /* Lavender background for cards */
+}
+
+.card .front, .card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #FFFACD; /* Lemon Chiffon background for card faces */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .back {
+    transform: rotateY(0deg);
+}
+
+footer {
+    background-color: #AFEEEE; /* Pale Turquoise background for the footer */
+    padding: 10px 20px;
+    border-top: 2px solid #40E0D0; /* Turquoise border */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #8B008B; /* Dark Magenta text for links */
+}
+
+.social-media-icons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #8B008B; /* Consistent Dark Magenta text for social media links */
+}
